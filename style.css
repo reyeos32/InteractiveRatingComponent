@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Orange-500: hsl(25, 97%, 53%);
+    --Grey-500: hsl(217, 12%, 63%);
+    --Grey-900: hsl(211, 32%, 13%);
+    --Grey-950: hsl(216, 12%, 8%);
+}
+
+.thankContainer {
+    display: none !important;
+}
+
+
+
+body {
+    background-color: var(--Grey-950);
+    font-family: 'overpass';
+}
+
+main {
+    position: relative;
+}
+
+main .ratingCard {
+    min-height: 100vh;
+    width: 23.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+main .ratingCard .container { 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--Grey-900);
+    padding: 1.25rem 1.875rem;
+    border-radius: 0.625rem;
+}
+
+main .ratingCard .ratingContainer .star {
+    width: 1.875rem;
+    height: 1.875rem;
+    background-color: var(--Grey-900);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+main .ratingCard .ratingContainer div img {
+    width: 0.9375rem;
+}
+
+main .ratingCard .ratingContainer h1 {
+    margin: 1.875rem 0 0.9375rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+main .ratingCard .ratingContainer p {
+    color: var(--Grey-500);
+    font-size: 0.9375rem;
+}
+
+main .ratingCard .ratingContainer .ratingNum {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.25rem 0;
+}
+
+main .ratingCard .ratingContainer .ratingNum .btn {
+    width: 3.125rem;
+    height: 3.125rem;
+    background-color: #7869791f;
+    border: none;
+    /* box-shadow: -3px 8px 18px 5px rgba(0, 0, 0, 0.8); */
+    border-radius: 50%;
+    color: var(--Grey-500);
+    cursor: pointer;
+    transition: 0.2s;
+    text-align: center;
+    font-weight: 700;
+}
+main .ratingCard .ratingContainer .ratingNum .btn.white {
+    background-color: white !important;
+    color: black !important;
+}
+
+main .ratingCard .ratingContainer .ratingNum .btn:hover {
+    background-color: var(--Orange-500);
+    color: black;
+}
+
+main .ratingCard .ratingContainer .submit {
+    background-color: var(--Orange-500);
+    border: none;
+    padding: 0.625rem 0;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 100%;
+}
+
+main .ratingCard .ratingContainer .submit:hover {
+    background-color: white;
+}
+
+
+
+
+
+
+main .ratingCard .thankContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main .ratingCard .thankContainer img {
+    width: 12.5rem;
+}
+
+main .ratingCard .thankContainer span {
+    color: var(--Orange-500);
+    margin: 1.875rem 0 2.5rem;
+    background-color: #202d3da8;
+    padding: 0.3125rem 1.5625rem;
+    border-radius: 1.25rem;
+    font-size: 0.875rem;
+}
+
+main .ratingCard .thankContainer h2 {
+    font-weight: 600;
+    margin-bottom: 0.9375rem;
+    font-size: 1.875rem;
+}
+
+main .ratingCard .thankContainer p {
+    color: var(--Grey-500);
+    font-size: 0.875rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.thankContainer.active { 
+    display: flex !important;
+    z-index: 1;
+}
+.ratingContainer.hidden {
+    display: none !important;
+}
+
+
+
+
+
+.attribution {
+    position: sticky;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    main .ratingCard {
+        padding: 0 2.5rem;
+    }
+}
